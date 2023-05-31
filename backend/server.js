@@ -8,7 +8,7 @@ const messageRoutes = require("./routes/messageRoutes");
 const path = require("path");
 
 const app = express();
-dotenv.config({path:"./config/db.js"});
+dotenv.config();
 connectDB();
 app.use(express.json());     //To accept json data
 
